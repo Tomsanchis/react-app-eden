@@ -4,13 +4,90 @@
 
 html {
   font-size: 62.5%;
-  height: 100%;
 }
 
 body {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin: 0 auto;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  min-height: 100vh;
+  font-family: "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+}
+
+main {
+  text-align: center;
+}
+
+button {
+  margin: 5px;
+}
+
+:root {
+  --main-color: #b3c5e4;
+}
+
+/* NAV */
+
+ul {
+  display: flex;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  margin: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+nav {
+  display: flex;
+  background: var(--main-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+nav img {
+  border-radius: 10%;
+  animation: anim-logo 5s infinite;
+}
+
+/* Animation Logo */
+
+@keyframes anim-logo {
+  0% {
+    border-radius: 50%;
+  }
+  25% {
+    border-radius: 25%;
+  }
+  50% {
+    border-radius: 50%;
+  }
+  75% {
+    border-radius: 75%;
+  }
+  100% {
+    border-radius: 100%;
+  }
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  background: var(--main-color);
+  padding: 25px;
+  font-weight: bold;
+  margin: 150px 0 0 0;
+  width: 100%;
+  position: absolute;
+  bottom: 0; 
 }
