@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const Home = () => {
   const [count, setcount] = useState(0);
   const [random, setrandom] = useState(0);
-  const [input, setinput] = useState();
+  const [input, setinput] = useState("qsdqsdqsdqs")
 
   const randomNumber = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
@@ -26,9 +26,6 @@ const Home = () => {
           setinput(e.target.value)
         }}/>
         {input.length < 12 ? <p>❌</p> : <p>✅</p>}
-      </div>
-      <div>
-        
       </div>
     </main>
   );
