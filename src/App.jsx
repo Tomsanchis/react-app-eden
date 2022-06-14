@@ -28,7 +28,7 @@ function App() {
           </ul>
         </nav>
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="*" element={<Home />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
           <Route path="/contact" element={<Contact />}></Route>
         </Routes>
